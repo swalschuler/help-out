@@ -1,0 +1,74 @@
+<!doctype html>
+<head>
+ 
+  <!-- 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+  <script src="js\jquery-2.1.4.min.js"></script>
+  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+  <script src="js\org_profile.js"></script>
+
+	<style>
+	
+	.error{
+		display: none;
+		margin-left: 10px;
+	}		
+
+	.error_show{
+		color: red;
+		margin-left: 10px;
+	}
+	
+	input.invalid, textarea.invalid{
+		border: 2px solid red;
+	}
+
+	input.valid, textarea.valid{
+		border: 2px solid green;	
+	}
+	</style>
+	
+</head>
+
+<body>
+  
+  <div id="main">
+  
+	
+	
+	<h1>USER</h1>
+	 <!---------------------------  Organization ------------------------- -->
+	 <input type="button" class="btn btn-primary btn-block col-xs-5" id="showAddEventDiv" value="Add Event"/>
+
+	 <div id="addEventdiv">
+                    <form class="form" action="#" id="contact" role="form">
+                      <div class="form-group">
+                        <label>Event Title: <span>*</span></label>
+                        <input type="text" class="form-control" id="title" placeholder="Enter event title"/>
+                      </div>
+                      <div class="form-group">  
+                        <label>Date Start: </label>
+                        <input type="text" class="form-control" id="contactno" placeholder="Enter time start"/>
+                        <label>Date End: </label>
+                        <input type="text" class="form-control" id="contactno" placeholder="Enter time end"/>
+                      </div>
+                      <div class="form-group">  
+                        <label>Location:</label>
+                        <textarea id="address" class="form-control" placeholder="address"></textarea>
+                      </div>
+                        <input type="button" class="btn btn-primary btn-block col-xs-5" id="addEventBtn" value="Submit New Event"/>
+                    </form></br></br></br></br>
+    </div>
+
+    <!--------------------------- Student ------------------------- -->
+	<div id="joinEventdiv">
+		<input type="button" class="btn btn-default btn-block col-xs-5" id="joinEventBtn" value="Join the Event"/>
+    </div>
+	
+
+</body>
+
+</html>
